@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 //  var mongoURI = "mongodb://localhost:27017/digital-App-1";
 
-var mongoURI = "mongodb://raja:mentcom123@ds147096.mlab.com:47096/digitalapp";
+ var mongoURI = "mongodb://raja:raja1234@ds261096.mlab.com:61096/mapapp";
 
 // var mongoURI = "mongodb://localhost:27017/digital-App-2";
 

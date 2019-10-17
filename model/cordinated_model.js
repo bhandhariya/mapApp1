@@ -2,8 +2,8 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var CordSchema = new Schema({
-   lang:{type:String},
-   lot:{type:String}
+   cc:{type:mongoose.Schema.Types.Mixed}
+   
    
 });
 
