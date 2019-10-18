@@ -22,7 +22,7 @@ exports.getAllCordinate=function(req,res,next){
         if(!err && result){
             res.send(result)
         }else{
-            console.log(err)
+            res.send(err)
         } 
     })
 }

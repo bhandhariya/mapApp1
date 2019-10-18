@@ -26,7 +26,7 @@ export class AppComponent  implements AfterViewInit  {
 
   drawPolygon() {
     this.map = new google.maps.Map(document.getElementById('map'), {
-      center: { lat: -34.397, lng: 150.644 },
+      center: { lat: 26.914799827484604, lng: 75.78729852403217 },
       zoom: 8
     });
 
@@ -104,6 +104,7 @@ export class AppComponent  implements AfterViewInit  {
     for(var i=0;i<dt.length;i++){
       console.log(dt[i].cc);
       var finalCordinates=dt[i].cc;
+      console.log(finalCordinates)
       new google.maps.Polygon({
         map: this.map,
         paths: finalCordinates,
