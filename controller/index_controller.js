@@ -1,11 +1,15 @@
 var Cords=require('../model/cordinated_model');
 
 exports.create=function(req,res,next){
-    var data=req.body;
-    console.log(data);
-    // res.send(data);
+    var data=req.body.first;
+    var data2=req.body.second;
+    // console.log(data);
+    // console.log(data2)
+
+    
     var cord=new Cords({
-        cc:data
+        cc:data,
+        zone:data2.zonename
     })
     cord.save(function(err,result){
         if(!err && result){

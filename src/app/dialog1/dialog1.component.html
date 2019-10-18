@@ -1,0 +1,15 @@
+<div class="card text-white bg-primary">
+  <img class="card-img-top" src="../../favicon.ico" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Please Enter this Zone name</h4>
+    <div class="form-group">
+        <label for="">Zone name</label>
+        <input type="text" [(ngModel)]="zone"
+          class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+       
+      </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" (click)="save()" >save</button>
+<button type="button" class="btn btn-primary" (click)="close()" >close</button>
