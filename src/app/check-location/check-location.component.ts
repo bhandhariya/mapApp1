@@ -24,9 +24,9 @@ export class CheckLocationComponent implements OnInit {
       this.lng=(results[0].geometry.location.lng()) 
       Swal.fire({
         title: 'The location are ',
-        text: 'Latitie is'+this.lat+'  and the long is '+this.lng,
+        text: 'Latitute is  '+this.lat+'  and the longtitute is '+this.lng,
         type: 'success',
-        confirmButtonText: 'Cool'
+        confirmButtonText: 'Ok '
       })
       this.cord.getAllCordinated().subscribe(this.cb)
       
