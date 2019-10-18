@@ -21,13 +21,14 @@ export class AppComponent  implements AfterViewInit  {
     MapLoaderService.load().then(() => {
       this.drawPolygon();
       this.initmapp();
+      // this.getCordsFromAddress();
     })
   }
 
   drawPolygon() {
     this.map = new google.maps.Map(document.getElementById('map'), {
       center: { lat: 26.914799827484604, lng: 75.78729852403217 },
-      zoom: 8
+      zoom: 12
     });
 
     this.drawingManager = new google.maps.drawing.DrawingManager({
@@ -124,4 +125,21 @@ export class AppComponent  implements AfterViewInit  {
       console.log(r)
     })
   }
+  getCordsFromAddress(){
+    var geocoder = new google.maps.Geocoder();
+    var address = "house no 256 , maliyon ki choupal, surajpol bharatpur";
+    geocoder.geocode( { 'address': address}, function(results, status) {
+
+      // if (status == google.maps.GeocoderStatus.OK) {
+      //     var latitude = results[0].geometry.location.latitude;
+      //     var longitude = results[0].geometry.location.longitude;
+      //     console.log(latitude);
+      //     console.log(longitude);
+
+      //     }
+      console.log(results[0].geometry.location.lat())
+      console.log(results[0].geometry.location.lng()) 
+      }); 
+  }
+
 }
