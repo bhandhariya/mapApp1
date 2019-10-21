@@ -14,6 +14,7 @@ import { MarkPolygonComponent } from './mark-polygon/mark-polygon.component';
 import { CheckLocationComponent } from './check-location/check-location.component'; 
 import { AgmCoreModule } from "@agm/core";
 import { KmlsearchComponent } from './kmlsearch/kmlsearch.component';
+import { ClarityModule } from '@clr/angular';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { KmlsearchComponent } from './kmlsearch/kmlsearch.component';
     MatDialogModule,
     AgmCoreModule.forRoot({
       apiKey:"AIzaSyAw7YBvg7qwPOz626dK7tQzViW6CdfwlM0"
-    })
+    }),
+    ClarityModule
   ],
   entryComponents:[Dialog1Component],
   providers: [],
