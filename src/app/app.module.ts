@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { MarkPolygonComponent } from './mark-polygon/mark-polygon.component';
 import { CheckLocationComponent } from './check-location/check-location.component'; 
 import { AgmCoreModule } from "@agm/core";
+import { KmlsearchComponent } from './kmlsearch/kmlsearch.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AgmCoreModule } from "@agm/core";
     Dialog1Component,
     HomeComponent,
     MarkPolygonComponent,
-    CheckLocationComponent
+    CheckLocationComponent,
+    KmlsearchComponent
   ],
   imports: [
     BrowserModule,
